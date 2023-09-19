@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravallika Vadla - Contact and Experiences</title>
+    <link rel="stylesheet" href="Main.css">
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .scroll-box {
+            overflow-y: scroll;
+            max-height: 400px; /* Adjust the height as needed */
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pravallika Vadla</h1>
+    </header>
+    <div class="container">
+        <button onclick="scrollToContact()">Scroll to Contact</button>
+        <button onclick="scrollToExperiences()">Scroll to Experiences</button>
+        <div class="scroll-box" id="contact-section">
+            <h2>Contact Information</h2>
+            <p>If you'd like to get in touch with me, please use the following contact details:</p>
+            <ul>
+                <li><b>Email:</b> <u>vadlapravallika1@gmail.com</u></li>
+                <li><b>Phone:</b> <u>(312) 684-1005</u></li>
+            </ul>
+        </div>
+        <div class="scroll-box" id="experiences-section">
+            <h2>My Experiences</h2>
+            <p>Here you can describe your experiences in detail.</p>
+            <p>Experience 1:</p>
+            <p>Experience 2:</p>
+            <!-- Add more content as needed -->
+        </div>
+    </div>
+    
+    <script>
+        function scrollToContact() {
+            const contactSection = document.getElementById('contact-section');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToExperiences() {
+            const experiencesSection = document.getElementById('experiences-section');
+            experiencesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
